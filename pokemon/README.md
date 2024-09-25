@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+## **Playlist de Pokémon - Frontend**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### **Descrição**
 
-## Available Scripts
+Este projeto implementa o frontend de uma aplicação web que funciona como uma espécie de playlist de Pokémon. A aplicação permite aos usuários:
 
-In the project directory, you can run:
+* **Visualizar Pokémon:** Uma lista de Pokémon é exibida, com opções para filtrar e ordenar os resultados por diversos critérios (ID, nome, status, etc.).
+* **Explorar por Geração:** Os Pokémon são organizados por suas respectivas gerações, facilitando a navegação e pesquisa.
+* **Criar Pokédex:** Os usuários podem criar suas próprias Pokédex, selecionando seus Pokémon favoritos a partir da lista principal.
+* **Gerenciar Pokédex:** As Pokédex criadas podem ser visualizadas e os Pokémon adicionados ou removidos.
 
-### `npm start`
+### **Tecnologias Utilizadas**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* **HTML:** Estrutura básica das páginas.
+* **CSS (Bootstrap):** Estilização e layout responsivo.
+* **JavaScript:** Lógica da aplicação, utilizando:
+    * **Axios:** Para realizar requisições HTTP e buscar dados de uma API (não especificada no prompt).
+    * **React Router Dom:** Para gerenciar as rotas da aplicação.
+    * **RouterProvider, useState, useEffect:** Hooks do React para gerenciar estado, efeitos colaterais e roteamento.
+    * **Outros:** Entre outras bibliotecas e componentes customizados foram utilizados para funcionalidades específicas.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **Estrutura de Diretórios**
 
-### `npm test`
+A estrutura de diretórios apresentada na imagem segue uma organização padrão para projetos React:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **public:** Contém arquivos estáticos como imagens e o arquivo index.html.
+* **src:** Contém o código fonte da aplicação:
+    * **assets:** Armazena os arquivos de imagem utilizados na aplicação.
+    * **Card:** Onde contém as especificações da apresentação do Pokémon na rota *Pokémons*.
+    * **css:** Arquivos CSS personalizados.
+    * **pages:** Contém os componentes das diferentes páginas da aplicação (Home, Pokemons, Gerações, MinhaPokedex).
+    * **services:** Contém os serviços utilizados para fazer requisições à API e obter os dados dos Pokémon e da Pokédex.
+    * **components:** Contém a modularização do Header da Navbar.
 
-### `npm run build`
+### **Rotas Implementadas**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* **Home:** Página inicial da aplicação.
+* **Pokemons:** Lista todos os Pokémon, com opções de filtragem e ordenação.
+* **Gerações:** Exibe os Pokémon organizados por geração.
+* **MinhaPokedex:** Permite ao usuário criar e gerenciar suas próprias Pokédex.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **Funcionalidades Adicionais**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* **Botão para adicionar Pokémon à Pokédex:** Na página de listagem de Pokémon, um botão permite adicionar o Pokémon selecionado à Pokédex do usuário.
+* **Visualização da Pokédex:** Ao clicar em uma Pokédex criada, os Pokémon selecionados são exibidos na página de Pokemons.
